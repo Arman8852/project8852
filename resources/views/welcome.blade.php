@@ -2,7 +2,7 @@
 <?php include "/Assests_PHP/CSS.php";?>
 
 
-                <div class="title">Facebook</div>
+                <div class="title">Rikkho</div>
                 @if(Auth::check())
 
 
