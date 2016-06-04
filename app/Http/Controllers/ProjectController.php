@@ -38,7 +38,7 @@ class ProjectController extends Controller
 
     public function register(){
      
-  return view('Login.register');
+  return view('Login.log');
 
 
     }
