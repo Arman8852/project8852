@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Login Signup form Widget Flat Responsive Widget Template :: w3layouts</title>
+<title>Register</title>
 
 <?php include "/Assests_PHP/JS.php";?>
 <?php include "/Assests_PHP/CSS.php";?>
