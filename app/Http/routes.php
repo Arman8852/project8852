@@ -14,13 +14,14 @@
 Route::resource('forum','ForumController');
 Route::resource('topic','TopicsController');
 Route::get('{id}/topics','TopicsController@topics');
-Route::get('gettopics','TopicsController@submittopics')->middleware('auth');
 Route::get('user/userstory/{id}','TopicsController@showtopicsdetails');
 Route::get('user/{id}','UserController@userprofile');
 Route::get('edittopic/{id}','TopicsController@editmytopic');
 Route::post('updatetopic/{id}','TopicsController@updatemytopic');
+Route::get('gettopics','TopicsController@submittopics')->middleware('auth');
+Route::get('allstory','ProjectController@allstory');
 Route::post('gettopics','TopicsController@gettopics');
-Route::get('image','TopicsController@getimage');
+//Route::get('image','TopicsController@getimage');
 Route::post('upload/{id}','TopicsController@upload');
 Route::get('showmystory','Auth\AuthController@getownstory');
    Route::get('about', 'ProjectController@about');
@@ -30,7 +31,7 @@ Route::get('showmystory','Auth\AuthController@getownstory');
 Route::post('selecteduser','ProjectController@fetchdata');
   // Route::get('privatetopic','TopicsController@showeditedtopics');
      //Route::get('{id}', 'ProjectController@home');
-
+Route::get('comment/{id}','TopicsController@comments')->middleware('auth');
      
    Route::get('login/facebook', 'Auth\AuthController@redirectToFacebook');
   Route::get('login/facebook/callback', 'Auth\AuthController@getFacebookCallback'); 
@@ -52,3 +53,19 @@ Route::get('logout', [ 'uses' => 'Auth\AuthController@getLogout', 'as' => 'logou
 // Registration routes...
 Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
+
+
+
+Route::post('sendmessage', 'ProjectController@sendMessage');
+Route::get('sendmessage','ProjectController@chatbox')->middleware('auth');
+
+
+Route::get('progress','ProjectController@progreesbar');
+
+Route::post('remark/{id}','ProjectController@postremark');
+
+Route::get('test','ProjectController@test');
+
+
+Route::get('ajax','ProjectController@ajax');
+Route::post('ajax','ProjectController@postajax');

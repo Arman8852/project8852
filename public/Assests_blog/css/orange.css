@@ -1,0 +1,382 @@
+/*
+Template Name: Riana Responsive HTML5/CSS3 Charity Template
+Author: iThemesLab
+Author URI: http://themeforest.net/user/ithemeslab
+Description: Riana Responsive HTML5/CSS3 Charity Template.
+Version: 1.0
+*/
+
+/*Global Styles*/
+a {
+	color: #f26101;
+}
+
+a:hover {
+    color: #f26101;
+}
+
+.btn-primary,
+.btn-primary:focus {
+    background: #f26101;
+    border-color: #f26101;
+}
+
+/*Typography*/
+.lg-title span:after {
+    background: #f26101;
+}
+
+.lg-title.text-center span:after {
+    background: #f26101;
+}
+
+.sm-title span:after {
+    background: #f26101;
+}
+
+.sm-title.text-center span:after {
+    background: #f26101;
+}
+
+.widget-title span:after {
+    background: #f26101;
+}
+
+/*Top Header*/
+.social-icon i.fa:hover {
+    background: #f26101;
+    color: #fff;
+}
+
+.top-email a:hover {
+    color: #f26101;
+}
+
+/*Navbar*/
+.navbar-nav > li > a:hover,
+.navbar-nav > li.active > a {
+    color: #f26101;
+    border-top: 2px solid #f26101;
+}
+
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+    background: transparent;
+    border-color: #f26101;
+}
+
+.dropdown-menu {
+    border-top: 2px solid #f26101;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover {
+    background: #f26101;
+}
+
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover {
+    background: #f26101;
+    color: #fff;
+}
+
+.mega-dropdown-menu ul > li.active > a,
+.mega-dropdown-menu ul > li > a:hover,
+.mega-dropdown-menu ul > li > a:focus {
+  text-decoration: none;
+  color: #fff;
+  background-color: #f26101;
+}
+
+.mega-dropdown-menu .dropdown-header {
+  color: #f26101;
+}
+
+/*Slideshow*/
+.slide-caption h2 span,
+.banner-caption h2 span {
+    color: #f26101;
+}
+
+.btn-slideshow {
+    color: #f26101;
+    background: #fff;
+    border: 2px solid #fff;
+
+}
+
+/*Feature*/
+.feature-wrap .icon-wrap i {
+    color: #f26101;
+}
+
+.feature-wrap:hover .icon-wrap i {
+    color: #f26101;
+}
+
+.feature-wrap:hover .icon-wrap {
+    border: 1px solid #f26101;
+    background: transparent;
+}
+
+.feature-wrap:hover .icon-wrap i {
+    color: #f26101;
+}
+
+/*Service Style*/
+.service-box .service-icon {
+    color: #f26101;
+}
+
+/*Current Cause*/
+.pbg1 {
+    background: url('../images/parallax/parallax-1.jpg');
+}
+
+.current-cause .progress-bar {
+    position: relative;
+    background: #f26101;
+}
+
+.current-cause .block {
+    background: #f26101;
+}
+
+.btn-donate {
+    color: #fff ;
+    background: #f26101;
+    border: 2px solid #f26101;
+}
+
+/*Urgent Cause*/
+.isotope-nav li.active {
+    color: #f26101;
+    border: 1px solid #f26101;
+}
+
+figure.effect-oscar .btn-causes:hover {
+    background: #f26101;
+    color: #fff;
+}
+
+figure.effect-oscar:hover .btn-causes:hover {
+    background: #f26101;
+    color: #fff;
+}
+
+figure.effect-roxy a:hover {
+    color: #f26101;
+    text-decoration: none;
+}
+
+.btn-loadmore {
+    background: #f26101;
+    color: #fff;
+}
+
+.causes-carousel h2 a:hover {
+    color: #f26101;
+    text-decoration: none;
+}
+
+.causes-carousel .btn-causes {
+    color: #fff;
+    background: #f26101;
+}
+
+/*Extensions*/
+.volunteer {
+    background: #f26101;
+}
+
+.btn-join {
+    background: #fff;
+    color: #f26101;
+}
+
+/*Event Timer*/
+.event-icon {
+    color: #f26101;
+}
+
+.team-social a:hover {
+    color: #f26101;
+    border: 1px solid #f26101;
+}
+
+/*Clients*/
+.client-slider .owl-nav [class*='owl-']:hover {
+    background: #f26101;
+}
+
+/*Footer*/
+.footer-section a:hover {
+    color: #f26101;
+    text-decoration: none;
+}
+
+.footer-social .social-icon i.fa:hover {
+    background: #f26101;
+    color: #fff;
+}
+
+.tweet-date {
+    color: #f26101;
+}
+
+.foot-menu li a:hover {
+    color: #f26101;
+    text-decoration: none;
+}
+
+/*Utility*/
+.st-accordion ul li.st-open > a span:before {
+    color: #f26101;
+}
+
+.st-accordion ul li > a:hover {
+    color: #f26101;
+    text-decoration: none;
+}
+
+/*Facts*/
+.facts {
+    background: #f26101;
+}
+
+.fact-box2 {
+    background: #f26101;
+}
+
+.fact-box3 {
+    background: #f26101;
+}
+
+/*Navhelper*/
+.breadcrumb li a:hover,
+.nav-helper.bg-image .breadcrumb li a:hover {
+    color: #f26101;
+}
+
+/*Progressbar*/
+.progress-bar {
+    background-color: #f26101;
+}
+
+/*Other Styles*/
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover {
+    background: #f26101;
+    border-color: #f26101;
+}
+
+/*Dropcaps*/
+.dropcap1 {
+    color: #f26101;
+}
+
+.dropcap2 {
+    color: #fff;
+    background: #f26101;
+}
+
+.dropcap3 {
+    color: #fff;
+    background: #f26101;
+}
+
+/*Pricing Table*/
+.price-box .price-title {
+    color: #fff;
+    background: #f26101;
+    border-bottom: 1px solid #ebebeb;
+}
+
+a.btn-price:hover {
+    background: #f26101;
+    border: 2px solid transparent;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Lists*/
+.fa-ul li i {
+    color: #f26101;
+    margin-top: 4px;
+}
+
+/*Tooltips*/
+.tooltipster-riana {
+    border-radius: 0px;
+    border: 2px solid #f26101;
+    background: #fff;
+    color: #2c2c2c;
+}
+
+/*BlogPage*/
+.content-area .entry-header h2 a:hover {
+    color: #f26101;
+    text-decoration: none;
+}
+
+.content-area .entry-meta span i {
+    color: #f26101;
+}
+
+.content-area .entry-meta span a:hover {
+    color: #f26101;
+    text-decoration: none;
+}
+
+/*Pagination*/
+.pagination > li > a,
+.pagination > li > span {
+    color: #f26101;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+    color: #fff;
+    background: #f26101;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+    background: #f26101;
+    border-color: #ddd;
+}
+
+.widget_categories ul li a:hover{
+    color: #f26101;
+}
+
+
+.tagcloud a:hover {
+    color: #fff;
+    background: #f26101;
+    text-decoration: none;
+
+}
+
+.itehmeslab-latest-post li a:hover {
+    color: #f26101;
+}
+
+.title-404 {
+	color: #f7505a;
+}
+
+/*Back to top*/
+a.back-to-top {
+    color: #fff;
+    background: #f26101;
+}

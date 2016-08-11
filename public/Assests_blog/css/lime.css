@@ -1,0 +1,381 @@
+/*
+Template Name: Riana Responsive HTML5/CSS3 Charity Template
+Author: iThemesLab
+Author URI: http://themeforest.net/user/ithemeslab
+Description: Riana Responsive HTML5/CSS3 Charity Template.
+Version: 1.0
+*/
+
+/*Global Styles*/
+a {
+	color: #72d23e;
+}
+
+a:hover {
+    color: #72d23e;
+}
+
+.btn-primary,
+.btn-primary:focus {
+    background: #72d23e;
+    border-color: #72d23e;
+}
+
+/*Typography*/
+.lg-title span:after {
+    background: #72d23e;
+}
+
+.lg-title.text-center span:after {
+    background: #72d23e;
+}
+
+.sm-title span:after {
+    background: #72d23e;
+}
+
+.sm-title.text-center span:after {
+    background: #72d23e;
+}
+
+.widget-title span:after {
+    background: #72d23e;
+}
+
+/*Top Header*/
+.social-icon i.fa:hover {
+    background: #72d23e;
+    color: #fff;
+}
+
+.top-email a:hover {
+    color: #72d23e;
+}
+
+/*Navbar*/
+.navbar-nav > li > a:hover,
+.navbar-nav > li.active > a {
+    color: #72d23e;
+    border-top: 2px solid #72d23e;
+}
+
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+    background: transparent;
+    border-color: #72d23e;
+}
+
+.dropdown-menu {
+    border-top: 2px solid #72d23e;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover {
+    background: #72d23e;
+}
+
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover {
+    background: #72d23e;
+    color: #fff;
+}
+
+.mega-dropdown-menu ul > li.active > a,
+.mega-dropdown-menu ul > li > a:hover,
+.mega-dropdown-menu ul > li > a:focus {
+  text-decoration: none;
+  color: #fff;
+  background-color: #72d23e;
+}
+
+.mega-dropdown-menu .dropdown-header {
+  color: #72d23e;
+}
+
+/*Slideshow*/
+.slide-caption h2 span {
+    color: #72d23e;
+}
+
+.btn-slideshow {
+    color: #72d23e;
+    background: #fff;
+    border: 2px solid #fff;
+
+}
+
+/*Feature*/
+.feature-wrap .icon-wrap i {
+    color: #72d23e;
+}
+
+.feature-wrap:hover .icon-wrap i {
+    color: #72d23e;
+}
+
+.feature-wrap:hover .icon-wrap {
+    border: 1px solid #72d23e;
+    background: transparent;
+}
+
+.feature-wrap:hover .icon-wrap i {
+    color: #72d23e;
+}
+
+/*Service Style*/
+.service-box .service-icon {
+    color: #72d23e;
+}
+
+/*Current Cause*/
+.pbg1 {
+    background: url('../images/parallax/parallax-1.jpg');
+}
+
+.current-cause .progress-bar {
+    position: relative;
+    background: #72d23e;
+}
+
+.current-cause .block {
+    background: #72d23e;
+}
+
+.btn-donate {
+    color: #fff ;
+    background: #72d23e;
+    border: 2px solid #72d23e;
+}
+
+/*Urgent Cause*/
+.isotope-nav li.active {
+    color: #72d23e;
+    border: 1px solid #72d23e;
+}
+
+figure.effect-oscar .btn-causes:hover {
+    background: #72d23e;
+    color: #fff;
+}
+
+figure.effect-oscar:hover .btn-causes:hover {
+    background: #72d23e;
+    color: #fff;
+}
+
+figure.effect-roxy a:hover {
+    color: #72d23e;
+    text-decoration: none;
+}
+
+.btn-loadmore {
+    background: #72d23e;
+    color: #fff;
+}
+
+.causes-carousel h2 a:hover {
+    color: #72d23e;
+    text-decoration: none;
+}
+
+.causes-carousel .btn-causes {
+    color: #fff;
+    background: #72d23e;
+}
+
+/*Extensions*/
+.volunteer {
+    background: #72d23e;
+}
+
+.btn-join {
+    background: #fff;
+    color: #72d23e;
+}
+
+/*Event Timer*/
+.event-icon {
+    color: #72d23e;
+}
+
+.team-social a:hover {
+    color: #72d23e;
+    border: 1px solid #72d23e;
+}
+
+/*Clients*/
+.client-slider .owl-nav [class*='owl-']:hover {
+    background: #72d23e;
+}
+
+/*Footer*/
+.footer-section a:hover {
+    color: #72d23e;
+    text-decoration: none;
+}
+
+.footer-social .social-icon i.fa:hover {
+    background: #72d23e;
+    color: #fff;
+}
+
+.tweet-date {
+    color: #72d23e;
+}
+
+.foot-menu li a:hover {
+    color: #72d23e;
+    text-decoration: none;
+}
+
+/*Utility*/
+.st-accordion ul li.st-open > a span:before {
+    color: #72d23e;
+}
+
+.st-accordion ul li > a:hover {
+    color: #72d23e;
+    text-decoration: none;
+}
+
+/*Facts*/
+.facts {
+    background: #72d23e;
+}
+
+.fact-box2 {
+    background: #72d23e;
+}
+
+.fact-box3 {
+    background: #72d23e;
+}
+
+/*Navhelper*/
+.breadcrumb li a:hover,
+.nav-helper.bg-image .breadcrumb li a:hover {
+    color: #72d23e;
+}
+
+/*Progressbar*/
+.progress-bar {
+    background-color: #72d23e;
+}
+
+/*Other Styles*/
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover {
+    background: #72d23e;
+    border-color: #72d23e;
+}
+
+/*Dropcaps*/
+.dropcap1 {
+    color: #72d23e;
+}
+
+.dropcap2 {
+    color: #fff;
+    background: #72d23e;
+}
+
+.dropcap3 {
+    color: #fff;
+    background: #72d23e;
+}
+
+/*Pricing Table*/
+.price-box .price-title {
+    color: #fff;
+    background: #72d23e;
+    border-bottom: 1px solid #ebebeb;
+}
+
+a.btn-price:hover {
+    background: #72d23e;
+    border: 2px solid transparent;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Lists*/
+.fa-ul li i {
+    color: #72d23e;
+    margin-top: 4px;
+}
+
+/*Tooltips*/
+.tooltipster-riana {
+    border-radius: 0px;
+    border: 2px solid #72d23e;
+    background: #fff;
+    color: #2c2c2c;
+}
+
+/*BlogPage*/
+.content-area .entry-header h2 a:hover {
+    color: #72d23e;
+    text-decoration: none;
+}
+
+.content-area .entry-meta span i {
+    color: #72d23e;
+}
+
+.content-area .entry-meta span a:hover {
+    color: #72d23e;
+    text-decoration: none;
+}
+
+/*Pagination*/
+.pagination > li > a,
+.pagination > li > span {
+    color: #72d23e;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+    color: #fff;
+    background: #72d23e;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+    background: #72d23e;
+    border-color: #ddd;
+}
+
+.widget_categories ul li a:hover{
+    color: #72d23e;
+}
+
+
+.tagcloud a:hover {
+    color: #fff;
+    background: #72d23e;
+    text-decoration: none;
+
+}
+
+.itehmeslab-latest-post li a:hover {
+    color: #72d23e;
+}
+
+.title-404 {
+	color: #f7505a;
+}
+
+/*Back to top*/
+a.back-to-top {
+    color: #fff;
+    background: #72d23e;
+}

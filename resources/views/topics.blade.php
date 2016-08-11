@@ -1,8 +1,7 @@
 <!DOCTYPE html>
  <head>
  
- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">    
-  
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">  
 </head>
 
 
@@ -45,8 +44,8 @@
                              <input type="text" name="title" class="form-control"/>
                          </div>
                 </div>
-
-                   {{Form::textarea('detail')}}
+</br/>
+                   {{Form::textarea('detail')}}<br/>
                   
 
                   

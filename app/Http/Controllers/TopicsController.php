@@ -10,7 +10,9 @@ Use App\Topic;
 Use App\Forum;
 use DB;
 use App\Image;
-
+use Auth;
+use App\Chat;
+use App\Events\CommentEvent;
 class TopicsController extends Controller
 {
     /**
@@ -129,6 +131,7 @@ class TopicsController extends Controller
    public function gettopics(Request $request){
    
            $topic=new Topic;
+           $user = User::where('name',Auth::user()->name)->firstOrFail();
            $topic->title=$request->Input('title');
             $topic->detail=$request->Input('detail');
              $topic->user_id=$request->Input('user_id');
@@ -136,7 +139,7 @@ class TopicsController extends Controller
                    $topic->save();
                    $image=Topic::where('title',$request->Input('title'))->firstOrFail();
                      
-                  return view('image',compact('image'));
+                  return view('image',compact('image','user'));
 
    }
 
@@ -150,11 +153,7 @@ class TopicsController extends Controller
            $photo->image=$filename;
            $photo->topic_id=$id;
            $photo->save();
-
-          
-
-           
-
+        
    }
 
     public function showtopicsdetails($id){
@@ -179,7 +178,27 @@ public function showeditedtopics(){
 
 }
 public function getimage(){
-  return view('image');
+  $user = User::where('name','Asm Arman')->firstOrFail();
+
+  return view('image',compact('user'));
+
+
+}
+ public function comments($id){
+  
+         $comment=Topic::where('id',$id)->firstOrFail();
+         return view('Comments.comments',compact('comment'));
+     
+
+}
+public function postremark(Request $request){
+       $chat=new Chat;
+      $chat->message=$request->input('message');
+       $chat->save();
+       $message=$request->input('message');
+        
+       
+
 
 
 }
