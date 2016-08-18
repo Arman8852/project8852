@@ -57,7 +57,17 @@ $('#searchname').autocomplete({
                 @endif
 
 
-                 </div>
+@if(Session::has('flash_message'))
+
+<div>
+<p style="color:red;padding-left:600px;">{{Session::get('flash_message')}}</p>
+</div>
+@endif
+
+
+
+
+                
                 @if(!Auth::check())
                 <div style="margin:100px;">
                 <div class="row">

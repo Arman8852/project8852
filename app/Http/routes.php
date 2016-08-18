@@ -10,7 +10,7 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
+Route::get('admin','ProjectController@admin')->middleware('admin');
 Route::resource('forum','ForumController');
 Route::resource('topic','TopicsController');
 Route::get('{id}/topics','TopicsController@topics');
@@ -21,7 +21,7 @@ Route::post('updatetopic/{id}','TopicsController@updatemytopic');
 Route::get('gettopics','TopicsController@submittopics')->middleware('auth');
 Route::get('allstory','ProjectController@allstory')->middleware('auth');
 Route::post('gettopics','TopicsController@gettopics');
-//Route::get('image','TopicsController@getimage');
+Route::post('deleteimage/{id}','ImageController@deleteimage');
 Route::post('upload/{id}','TopicsController@upload');
 Route::get('showmystory','Auth\AuthController@getownstory');
    Route::get('about', 'ProjectController@about');

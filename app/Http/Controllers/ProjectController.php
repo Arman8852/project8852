@@ -203,7 +203,11 @@ public function chating(){
 return view('Chat.chat');
 
 }
+public function admin(){
+$topics=Topic::all();
+return view('Admin.admin',compact('topics'));
 
+}
 
 
   
