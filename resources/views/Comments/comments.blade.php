@@ -1,12 +1,6 @@
 
 <body>
 
-<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-
-<?php include "/Assests_PHP/JS.php";?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.6/socket.io.min.js"></script>
 
 
 <h1>{{$comment->title}}</h1>
@@ -16,26 +10,7 @@
 
  
 
-<script>
-        
-        var socket = io.connect('http://localhost:3000');
-        var id={{$comment->id}};
-        socket.on('message:App\\Events\\CommentEvent', function (data) {
-        
-             if(data.id={{$comment->id}}){
-        
-           $( "#messages" ).append( "<p>"+data.remarkdata+"</p>" );
-    
 
-    }
-     else{
-
-       $( "#messages" ).append( "<p>"+"Hello"+"</p>" );
-
-     }
-
-          });
-    </script>
 
 
 
@@ -52,6 +27,14 @@
                         <input type="hidden" value="{{Auth::user()->name}}" name="user">
                         <input type="hidden" value="{{$comment->id}}" name="id">
                     {{Form::close()}}
+
+
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+<?php include "/Assests_PHP/JS.php";?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.6/socket.io.min.js"></script>
 
 
 
@@ -83,4 +66,33 @@ $('#ajax').on('submit',function(e){
 });
 
 </script>
+
+
+<script>
+        
+        var socket = io.connect('http://localhost:3000');
+        var id={{$comment->id}};
+        socket.on('message:App\\Events\\CommentEvent', function (data) {
+        
+             if({{$comment->id}}==data.id){
+        
+           $( "#messages" ).append( "<p>"+data.remarkdata+"</p>" );
+    
+
+    }
+     else{
+
+      
+
+     }
+
+          });
+    </script>
+
+
+
+
+
+
+
 </body>

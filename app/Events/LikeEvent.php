@@ -6,22 +6,21 @@ use App\Events\Event;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
-class ChatEvent extends Event implements ShouldBroadcast
+class LikeEvent extends Event implements ShouldBroadcast
 {
+
     use SerializesModels;
-    public $chatdata;
-    public $user;
-    public $id;
+     public $id;
+     public $count;
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct($chatdata,$user,$id)
+    public function __construct($id,$count)
     {
-        $this->chatdata=$chatdata;
-        $this->user=$user;
         $this->id=$id;
+        $this->count=$count;
     }
 
     /**

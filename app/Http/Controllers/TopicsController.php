@@ -11,6 +11,7 @@ Use App\Forum;
 use DB;
 use App\Image;
 use Auth;
+use App\Like;
 use App\Chat;
 use App\Events\CommentEvent;
 class TopicsController extends Controller
@@ -131,12 +132,25 @@ class TopicsController extends Controller
    public function gettopics(Request $request){
    
            $topic=new Topic;
+           $like=new Like;
            $user = User::where('name',Auth::user()->name)->firstOrFail();
            $topic->title=$request->Input('title');
             $topic->detail=$request->Input('detail');
              $topic->user_id=$request->Input('user_id');
              $topic->forum_id=$request->Input('forum');
-                   $topic->save();
+             $topic->save();
+             $like->count=0;
+             $like->parson_id=$request->Input('user_id');
+             $like->topic_id=DB::table('topics')
+                ->where('title',$request->Input('title'))
+                ->first()->id;
+             $like->save();
+            
+             
+             
+             
+            
+                   
                    $image=Topic::where('title',$request->Input('title'))->firstOrFail();
                      
                   return view('image',compact('image','user'));

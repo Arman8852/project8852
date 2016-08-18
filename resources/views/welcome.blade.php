@@ -1,3 +1,4 @@
+<body>
 <?php include "/Assests_PHP/JS.php";?>
 <?php include "/Assests_PHP/CSS.php";?>
 
@@ -72,10 +73,9 @@ $('#searchname').autocomplete({
                      </div>
                  @endif
                  <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-574ff1c7c6d166c6"></script>
-
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57b325b90020146e"></script>
                 
-
+</body>
 
 
                 

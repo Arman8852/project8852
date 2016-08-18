@@ -1,10 +1,12 @@
+
+<body>
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 <?php include "/Assests_PHP/JS.php";?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.6/socket.io.min.js"></script>
-<body>
- <div id="messages" ></div>
+
+ 
 
  
 
@@ -61,6 +63,21 @@ $('#chat').on('submit',function(e){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body> 
 
 
@@ -73,9 +90,6 @@ $('#chat').on('submit',function(e){
 
 
 
-
-
-
-
+ 
 
                  

@@ -13,7 +13,12 @@ use Auth;
 use Redis;
 use App\Events\ChatEvent;
 use App\Events\CommentEvent;
+use App\Events\LikeEvent;
+use App\Events\KeydownEvent;
+use App\Events\KeyupEvent;
+
 use App\Topic;
+use App\Like;
 class ProjectController extends Controller
 {
     
@@ -56,19 +61,7 @@ public function search(){
      
   return view('Search.search');
 }
-   public function email(){
-     
-    Mail::send('Email.email',['name'=>'KK'],function($message){
-
-     $message->to('kk235544@gmail.com','Khalid')->subject('Welcome');
-
-    });
-
-
-    }
-
-
-
+   
 
 
     public function autocomplete(Request $request){
@@ -101,12 +94,11 @@ public function chatbox(){
 
 public function sendMessage(Request $request){
   
-     $chat=new Chat;
-      $chat->message=$request->input('message');
-       $chat->save();
+     
        $message=$request->input('message');
        $user=$request->input('user');
-       event(new ChatEvent($message,$user));
+        $id=$request->input('user_id');
+       event(new ChatEvent($message,$user,$id));
 
      //$redis = Redis::connection();
     //$redis->publish('message',json_encode($data));
@@ -116,13 +108,7 @@ public function sendMessage(Request $request){
 
 
 public function test(){
-$data=[];
- Mail::send('test.test',$data,function($message){
-
-$message->to('anm.nayeem98@gmail.com')->subject('Welcome To Rikkho');
-
- }); 
-
+return view('test.test');
 
 
 }
@@ -132,7 +118,9 @@ $message->to('anm.nayeem98@gmail.com')->subject('Welcome To Rikkho');
 public function allstory(){
   
     $topics=Topic::paginate(3);
-     return view('test.test',compact('topics'));
+    $value=0;
+
+     return view('Ajax.ajax',compact('topics','value'));
      
    
   }
@@ -163,7 +151,58 @@ public function postremark(Request $request){
         event(new CommentEvent($message,$id));
       
 }
+public function postlike(Request $request,$id){
+      $like=new Like;
+      $like->count= 1;
+      $like->topic_id=$request->Input('topic');
+      $like->parson_id=$request->Input('user');
+        $like->save();
+       $count=DB::table('likes')
+                ->where('topic_id', $id)
+                ->sum('count');
 
+         
+        
+        $id=$request->Input('topic');
+        $result=[$count,$id];
+         event(new LikeEvent($id,$count));
+        return response()->JSON($result);
+        
+                
+    
+}
+
+
+public function typo(){
+$user=Auth::user()->id;
+$name=Auth::user()->name;
+event(new KeydownEvent($user,$name));
+
+       
+
+}
+
+public function keyup(){
+
+event(new KeyupEvent());
+
+       
+
+}
+
+
+
+
+
+ public function download($id){
+    return response()->download('uploads/topics/'.$id);
+}
+
+public function chating(){
+
+return view('Chat.chat');
+
+}
 
 
 

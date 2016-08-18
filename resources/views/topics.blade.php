@@ -19,7 +19,7 @@
 
 @foreach($topic->images as $image)
 @if($image->image !='')
-<img src="/uploads/topics/{{$image->image}}" style="border-radius:50%;margin-right:2000px;width:100px;height:100px">
+<a href="download/{{$image->image}}"><img src="/uploads/topics/{{$image->image}}" style="border-radius:50%;margin-right:2000px;width:100px;height:100px"></a>
 @endif
 @endforeach
 

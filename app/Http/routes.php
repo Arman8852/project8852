@@ -19,7 +19,7 @@ Route::get('user/{id}','UserController@userprofile');
 Route::get('edittopic/{id}','TopicsController@editmytopic');
 Route::post('updatetopic/{id}','TopicsController@updatemytopic');
 Route::get('gettopics','TopicsController@submittopics')->middleware('auth');
-Route::get('allstory','ProjectController@allstory');
+Route::get('allstory','ProjectController@allstory')->middleware('auth');
 Route::post('gettopics','TopicsController@gettopics');
 //Route::get('image','TopicsController@getimage');
 Route::post('upload/{id}','TopicsController@upload');
@@ -29,6 +29,8 @@ Route::get('showmystory','Auth\AuthController@getownstory');
    Route::get('autocomplete',array('as'=>'autocomplete','uses'=>'ProjectController@autocomplete'));
  Route::get('email','ProjectController@email') ;
 Route::post('selecteduser','ProjectController@fetchdata');
+Route::post('typo','ProjectController@typo');
+Route::post('keyup','ProjectController@keyup');
   // Route::get('privatetopic','TopicsController@showeditedtopics');
      //Route::get('{id}', 'ProjectController@home');
 Route::get('comment/{id}','TopicsController@comments')->middleware('auth');
@@ -36,7 +38,7 @@ Route::get('comment/{id}','TopicsController@comments')->middleware('auth');
    Route::get('login/facebook', 'Auth\AuthController@redirectToFacebook');
   Route::get('login/facebook/callback', 'Auth\AuthController@getFacebookCallback'); 
 
-
+Route::post('postlike/{id}','ProjectController@postlike')->middleware('auth');
 
 Route::get('/', 'ProjectController@index');
 Route::get('register', 'ProjectController@register');
@@ -54,7 +56,7 @@ Route::get('logout', [ 'uses' => 'Auth\AuthController@getLogout', 'as' => 'logou
 Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
 
-
+Route::get('download/{id}','ProjectController@download');
 
 Route::post('sendmessage', 'ProjectController@sendMessage');
 Route::get('sendmessage','ProjectController@chatbox')->middleware('auth');
@@ -65,7 +67,7 @@ Route::get('progress','ProjectController@progreesbar');
 Route::post('remark/{id}','ProjectController@postremark');
 
 Route::get('test','ProjectController@test');
+Route::get('chatbox','ProjectController@chating');
 
-
-Route::get('ajax','ProjectController@ajax');
-Route::post('ajax','ProjectController@postajax');
+//Route::get('ajax','ProjectController@ajax');
+//Route::post('ajax','ProjectController@postajax');
